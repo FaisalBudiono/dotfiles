@@ -1,0 +1,10 @@
+version: '3.8'
+name: debian
+
+services:
+  app:
+    build:
+      dockerfile: ./Dockerfile.dev
+    image: local/debian
+    container_name: debian-zshconfig
+    working_dir: /root/zshconfig

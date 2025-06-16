@@ -1,0 +1,6 @@
+services:
+  app:
+    build:
+      target: final-volume
+    volumes:
+      - /home/ucul/.custom-config/zshconfig:/root/zshconfig
