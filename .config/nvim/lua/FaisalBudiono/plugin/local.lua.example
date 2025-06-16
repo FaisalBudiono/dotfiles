@@ -1,0 +1,144 @@
+local util = require("FaisalBudiono.util")
+
+local pane = "zzdocker"
+
+local cmd_clear = function()
+    vim.cmd("!tmux send-keys -t " .. pane .. " c-c")
+    vim.cmd("!tmux send-keys -t " .. pane .. " -R")
+    vim.cmd("!tmux clear-history -t " .. pane)
+end
+
+--
+-- PHP
+--
+
+local php_test_file = function()
+    cmd_clear()
+    local filepath = vim.fn.expand("%:~:.")
+
+    -- vim.cmd("!tmux send-keys -t " .. pane .. " './vendor/bin/paratest -f " .. filepath .. "' c-m")
+    vim.cmd(
+        "!tmux send-keys -t "
+            .. pane
+            .. " './vendor/bin/paratest --functional "
+            .. filepath
+            .. "' c-m"
+    )
+end
+
+local php_test_file_verbose = function()
+    cmd_clear()
+
+    local filepath = vim.fn.expand("%:~:.")
+
+    vim.cmd(
+        "!tmux send-keys -t " .. pane .. " './vendor/bin/phpunit --testdox " .. filepath .. "' c-m"
+    )
+end
+
+local php_test_method = function()
+    cmd_clear()
+
+    local name = util.get_visual()[1]
+
+    vim.cmd("!tmux send-keys -t " .. pane .. " 'pwf " .. name .. "' c-m")
+end
+
+local php_create_test_file = function()
+    local filepath = vim.fn.expand("%:.")
+    local filename = vim.fn.expand("%:t")
+
+    local paths = {}
+    local _ = string.gsub(filepath, "(%w+)%/", function(sec)
+        table.insert(paths, sec)
+    end)
+
+    local testdir = "tests/Unit"
+
+    for i, path in ipairs(paths) do
+        if i ~= 1 then
+            testdir = testdir .. "/" .. path
+        end
+    end
+    local testpath = testdir .. "/" .. filename
+
+    vim.cmd(":!mkdir -p " .. testdir)
+    vim.cmd(":e " .. testpath)
+    vim.cmd(":w")
+end
+
+--
+-- Go
+--
+
+local go_test_file = function()
+    cmd_clear()
+    local filepath = vim.fn.expand("%:~:.")
+
+    vim.cmd("!tmux send-keys -t " .. pane .. " 'go test -v " .. filepath .. "' c-m")
+end
+
+local go_test_method = function()
+    cmd_clear()
+    local name = util.get_visual()[1]
+    local filepath = vim.fn.expand("%:~:.")
+
+    vim.cmd(
+        "!tmux send-keys -t "
+            .. pane
+            .. " 'go test -v -run \""
+            .. name
+            .. '" '
+            .. filepath
+            .. "' c-m"
+    )
+end
+
+local go_test_method_subtest = function()
+    cmd_clear()
+    local name = util.get_visual()[1]
+    local filepath = vim.fn.expand("%:~:.")
+
+    vim.cmd(
+        "!tmux send-keys -t "
+            .. pane
+            .. " 'go test -v -run \"/"
+            .. name
+            .. '" '
+            .. filepath
+            .. "' c-m"
+    )
+end
+
+local go_create_test_file = function()
+    local filepath = vim.fn.expand("%:.:h")
+    local filename = vim.fn.expand("%:t:r")
+
+    local testpath = filepath .. "/" .. filename .. "_test.go"
+    vim.cmd(":e " .. testpath)
+    vim.cmd(":w")
+end
+
+--
+-- Bind
+--
+
+vim.keymap.set("n", "<leader>l;", function()
+    go_test_file()
+end)
+vim.keymap.set("n", "<leader>l:", function()
+    go_test_file()
+end)
+vim.keymap.set("n", "<leader>lt", function()
+    go_create_test_file()
+end)
+
+vim.keymap.set("v", "<leader>l;", function()
+    go_test_method()
+end)
+vim.keymap.set("v", "<leader>l:", function()
+    go_test_method_subtest()
+end)
+
+return {}
+
