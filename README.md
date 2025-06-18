@@ -27,6 +27,7 @@ For every config it has their own prerequisites.
 | postgresql-client   | neovim     |                                                              |
 | rustfmt             | neovim     |                                                              |
 | FiraCode Nerd Font  | ghostty    |                                                              |
+| rofi emoji          | rofi       | for emoji searcher                                           |
 
 > Install `rustfmt` using `rustup`
 

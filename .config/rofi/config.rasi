@@ -13,6 +13,10 @@ configuration {
     display-name: "";
   }
 
+  emoji {
+    display-name: "🤦🏼‍♂️";
+  }
+
   timeout {
     delay: 10;
     action: "kb-cancel";
