@@ -2,17 +2,18 @@
 {
   // "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 20, // Waybar height (to be removed for auto height)
+  "height": 15, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
-  "spacing": 4, // Gaps between modules (4px)
+  "spacing": 2, // Gaps between modules (4px)
   "modules-left": [],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
+    "tray",
     "pulseaudio",
     "wireplumber",
     "cpu",
     "memory",
-    "tray",
+    "network",
   ],
   "hyprland/workspaces": {
     "format": "{name} {icon}",
@@ -121,6 +122,7 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "on-click": "iwgtk",
   },
   "pulseaudio": {
     "scroll-step": 0.5, // %, can be a float

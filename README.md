@@ -11,7 +11,9 @@ For every config it has their own prerequisites.
 | waybar              | hyprland   | status bar                                                   |
 | xwaylandvideobridge | hyprland   | fixing hyprland sharescreen                                  |
 | swaync              | hyprland   | hyprland notification                                        |
-| helvum              | waybar     | sound controller for wireplumber                             |
+| helvum              | waybar     | sound wiring for wireplumber                                 |
+| pavucontrol         | waybar     | sound controller for pulseaudio                              |
+| iwgtk               | waybar     | GUI for iwd                                                  |
 | fzf                 | zsh,neovim |                                                              |
 | tmux                | zsh        |                                                              |
 | starship            | zsh        |                                                              |
