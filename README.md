@@ -17,7 +17,7 @@ For every config it has their own prerequisites.
 | starship            | zsh        |                                                              |
 | readlink            | zsh        |                                                              |
 | npm                 | neovim     | use nvm instead, the nvm will be lazy loaded with `cinitnvm` |
-| go                  | neovim     | use gvm instead, the nvm will be lazy loaded with `cinitnvm` |
+| go                  | neovim     | use gvm instead, the nvm will be lazy loaded with `cinitgvm` |
 | xclip               | neovim     |                                                              |
 | ripgrep             | neovim     |                                                              |
 | nerdfont            | neovim     |                                                              |
