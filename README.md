@@ -1,23 +1,29 @@
 # Prerequisites
 
+- stow
+- git
+
 For every config it has their own prerequisites.
 
-- stow
-- git (**required** and for neovim)
-- fzf (for zsh config)
-- tmux (for zsh config)
-- starship (for zsh config)
-- readlink (for zsh config)
-- npm (for neovim)
-- go (for neovim)
-- xclip (for neovim)
-- ripgrep (for neovim)
-- fzf (for neovim)
-- nerdfont (for neovim)
-- mysql-client (for neovim)
-- postgresql-client (for neovim)
-- rustfmt (for neovim)
-- FiraMono Nerd Font (for ghostty)
+| Deps                | Who Needs  | Description                                                  |
+| ------------------- | ---------- | ------------------------------------------------------------ |
+| ghostty             | hyprland   | main terminal                                                |
+| waybar              | hyprland   | status bar                                                   |
+| xwaylandvideobridge | hyprland   | fixing hyprland sharescreen                                  |
+| swaync              | hyprland   | hyprland notification                                        |
+| fzf                 | zsh,neovim |                                                              |
+| tmux                | zsh        |                                                              |
+| starship            | zsh        |                                                              |
+| readlink            | zsh        |                                                              |
+| npm                 | neovim     | use nvm instead, the nvm will be lazy loaded with `cinitnvm` |
+| go                  | neovim     | use gvm instead, the nvm will be lazy loaded with `cinitnvm` |
+| xclip               | neovim     |                                                              |
+| ripgrep             | neovim     |                                                              |
+| nerdfont            | neovim     |                                                              |
+| mysql-client        | neovim     |                                                              |
+| postgresql-client   | neovim     |                                                              |
+| rustfmt             | neovim     |                                                              |
+| FiraCode Nerd Font  | ghostty    |                                                              |
 
 > Install `rustfmt` using `rustup`
 
