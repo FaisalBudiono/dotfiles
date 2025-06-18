@@ -1,5 +1,6 @@
 alias -g ccda="source $ZSH_CONFIG_PATH/zsh-config/cd-add-fzf.sh"
 alias -g ccd="source $ZSH_CONFIG_PATH/zsh-config/cd-fzf.sh"
+alias -g ccde="nvim $ZSH_CONFIG_PATH/zsh-config/local/fzf.txt"
 alias -g cchown="sudo chown -R ucul:ucul"
 alias -g ccurl="curl -# -w \"@$ZSH_CONFIG_PATH/zsh-config/curl-format.txt\""
 alias -g cdc="comhel"
