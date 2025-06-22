@@ -5,31 +5,31 @@
 
 For every config it has their own prerequisites.
 
-| Deps                | Who Needs  | Description                                                  |
-| ------------------- | ---------- | ------------------------------------------------------------ |
-| ghostty             | hyprland   | main terminal                                                |
-| waybar              | hyprland   | status bar                                                   |
-| xwaylandvideobridge | hyprland   | fixing hyprland sharescreen                                  |
-| swaync              | hyprland   | hyprland notification                                        |
-| hyprpolkitagent     | hyprland   | polkit agent for hyprland                                    |
-| hyprpaper           | hyprland   | wallpaper for hyprland                                       |
-| helvum              | waybar     | sound wiring for wireplumber                                 |
-| pavucontrol         | waybar     | sound controller for pulseaudio                              |
-| iwgtk               | waybar     | GUI for iwd                                                  |
-| fzf                 | zsh,neovim |                                                              |
-| tmux                | zsh        |                                                              |
-| starship            | zsh        |                                                              |
-| readlink            | zsh        |                                                              |
-| npm                 | neovim     | use nvm instead, the nvm will be lazy loaded with `cinitnvm` |
-| go                  | neovim     | use gvm instead, the nvm will be lazy loaded with `cinitgvm` |
-| xclip               | neovim     |                                                              |
-| ripgrep             | neovim     |                                                              |
-| nerdfont            | neovim     |                                                              |
-| mysql-client        | neovim     |                                                              |
-| postgresql-client   | neovim     |                                                              |
-| rustfmt             | neovim     |                                                              |
-| FiraCode Nerd Font  | ghostty    |                                                              |
-| rofi emoji          | rofi       | for emoji searcher                                           |
+| Deps                        | Who Needs  | Description                                                  |
+| --------------------------- | ---------- | ------------------------------------------------------------ |
+| ghostty                     | hyprland   | main terminal                                                |
+| waybar                      | hyprland   | status bar                                                   |
+| xdg-desktop-portal-hyprland | hyprland   | Share screen helper                                          |
+| swaync                      | hyprland   | hyprland notification                                        |
+| hyprpolkitagent             | hyprland   | polkit agent for hyprland                                    |
+| hyprpaper                   | hyprland   | wallpaper for hyprland                                       |
+| helvum                      | waybar     | sound wiring for wireplumber                                 |
+| pavucontrol                 | waybar     | sound controller for pulseaudio                              |
+| iwgtk                       | waybar     | GUI for iwd                                                  |
+| fzf                         | zsh,neovim |                                                              |
+| tmux                        | zsh        |                                                              |
+| starship                    | zsh        |                                                              |
+| readlink                    | zsh        |                                                              |
+| npm                         | neovim     | use nvm instead, the nvm will be lazy loaded with `cinitnvm` |
+| go                          | neovim     | use gvm instead, the nvm will be lazy loaded with `cinitgvm` |
+| xclip                       | neovim     |                                                              |
+| ripgrep                     | neovim     |                                                              |
+| nerdfont                    | neovim     |                                                              |
+| mysql-client                | neovim     |                                                              |
+| postgresql-client           | neovim     |                                                              |
+| rustfmt                     | neovim     |                                                              |
+| FiraCode Nerd Font          | ghostty    |                                                              |
+| rofi emoji                  | rofi       | for emoji searcher                                           |
 
 > Install `rustfmt` using `rustup`
 
