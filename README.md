@@ -30,6 +30,7 @@ For every config it has their own prerequisites.
 | rustfmt                     | neovim     |                                                              |
 | FiraCode Nerd Font          | ghostty    |                                                              |
 | rofi emoji                  | rofi       | for emoji searcher                                           |
+| wtype                       | rofi       | for inserting emoji from rofi                                |
 
 > Install `rustfmt` using `rustup`
 
