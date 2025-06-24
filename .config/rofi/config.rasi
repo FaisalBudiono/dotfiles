@@ -9,6 +9,10 @@ configuration {
     display-name: "";
   }
 
+  dmenu {
+    display-name: "";
+  }
+
   window {
     display-name: "";
   }
@@ -123,4 +127,8 @@ element-icon {
 
 element-text {
     text-color: inherit;
+}
+
+listview {
+    dynamic: true;
 }
