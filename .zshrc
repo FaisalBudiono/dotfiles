@@ -20,3 +20,6 @@ source $ZSH_CONFIG_PATH/zsh-config/modules/nvm-config.zsh
 source $ZSH_CONFIG_PATH/zsh-config/modules/service.zsh
 
 eval "$(starship init zsh)"
+
+# Set up fzf key binding
+source <(fzf --zsh)
