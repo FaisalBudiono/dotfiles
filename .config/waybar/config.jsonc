@@ -1,20 +1,17 @@
 // -*- mode: jsonc -*-
 {
-  // "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 15, // Waybar height (to be removed for auto height)
-  // "width": 1280, // Waybar width
-  "spacing": 2, // Gaps between modules (4px)
-  "modules-left": [],
-  "modules-center": ["hyprland/workspaces"],
+  "spacing": 0,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
   "modules-right": [
     "tray",
-    "pulseaudio",
-    "wireplumber",
+    "power-profiles-daemon",
     "cpu",
     "memory",
+    "pulseaudio",
     "network",
-    "clock",
+    "battery",
   ],
   "hyprland/workspaces": {
     "format": "{name} {icon}",
@@ -92,7 +89,8 @@
     "tooltip": false,
   },
   "memory": {
-    "format": "{}% ",
+    "format": "{used}/{total} ({percentage}%) ",
+    "interval": 10,
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -109,7 +107,7 @@
   },
   "battery": {
     "states": {
-      // "good": 95,
+      "good": 90,
       "warning": 30,
       "critical": 15,
     },
@@ -138,12 +136,12 @@
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-wifi": "({signalStrength}%)",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format-wifi": "{essid} ({ifname}: {ipaddr}/{cidr})",
     "on-click": "iwgtk",
   },
   "pulseaudio": {
