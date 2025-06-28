@@ -2,3 +2,4 @@
 README.md
 zsh-config/*
 script/.gitignore
+.config/hypr/monitors.conf.example
