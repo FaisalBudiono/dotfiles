@@ -13,10 +13,15 @@ For every config it has their own prerequisites.
 | swaync                      | hyprland   | hyprland notification                                        |
 | hyprpolkitagent             | hyprland   | polkit agent for hyprland                                    |
 | hyprpaper                   | hyprland   | wallpaper for hyprland                                       |
+| hyprshot                    | hyprland   | for screenshot                                               |
 | helvum                      | waybar     | sound wiring for wireplumber                                 |
 | pavucontrol                 | waybar     | sound controller for pulseaudio                              |
 | iwgtk                       | waybar     | GUI for iwd                                                  |
+| otf-font-awesome            | waybar     | font helper                                                  |
+| power-profiles-daemon       | waybar     | power profile manager                                        |
 | fzf                         | zsh,neovim |                                                              |
+| antigen                     | zsh        | Plugin manager                                               |
+| oh-my-zsh                   | zsh        |                                                              |
 | tmux                        | zsh        |                                                              |
 | starship                    | zsh        |                                                              |
 | readlink                    | zsh        |                                                              |
@@ -28,7 +33,9 @@ For every config it has their own prerequisites.
 | mysql-client                | neovim     |                                                              |
 | postgresql-client           | neovim     |                                                              |
 | rustfmt                     | neovim     |                                                              |
-| FiraCode Nerd Font          | ghostty    |                                                              |
+| FiraMono Nerd Font          | ghostty    |                                                              |
+| montserrat                  | rofi       | font                                                         |
+| Roboto Condensed            | rofi       | font                                                         |
 | rofi emoji                  | rofi       | for emoji searcher                                           |
 | wtype                       | rofi       | for inserting emoji from rofi                                |
 
