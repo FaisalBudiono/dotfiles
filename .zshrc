@@ -9,6 +9,8 @@ plugins=(
 
 ZVM_CURSOR_STYLE_ENABLED=true
 
+export PAGER=less
+
 source $ZSH/oh-my-zsh.sh
 
 source $ZSH_CONFIG_PATH/zsh-config/modules/00-alias.zsh
