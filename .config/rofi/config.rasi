@@ -65,9 +65,9 @@ inputbar {
 }
 
 prompt {
-    font:"Roboto Condensed 40";
-    expand:false;
-    size: 28px;
+    font: "Roboto Condensed 40";
+    expand: false;
+    padding: 0.4em 0.8em 0.4em 0.4em;
 }
 
 icon-search, entry, element-icon, element-text {
