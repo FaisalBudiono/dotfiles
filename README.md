@@ -49,17 +49,29 @@ stow .
 
 # Config Per Apps
 
+## Hypr
+
+Make sure all to copy the `.example` and remove the `.example` file from the copy and adjust the file
+
 ## Rofi
 
-WIP
+Need this fonts to be installed:
+- Montserrat
+- Roboto Condensed
+
+Need `rofi emoji` to be able to use insert emoji and `wtype` to make sure the selected emoji can be inserted into screen
 
 ## Waybar
 
-WIP
+- `helvum` is just a tools to piping the input and output of the pipewire.
+- `pavucontrol` is a controller for the sound
+- `iwgtk` GUI for IWD
+- `otf-font-awesome` the font that used by waybar
+- `power-profiles-daemon` a daemon to change the power profile (especially useful in laptop)
 
 ## Ghostty
 
-WIP
+Need to install `FiraMono Nerd Font` font
 
 ## TMUX
 
