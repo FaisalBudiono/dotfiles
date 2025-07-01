@@ -14,6 +14,7 @@ For every config it has their own prerequisites.
 | hyprpolkitagent             | hyprland   | polkit agent for hyprland                                    |
 | hyprpaper                   | hyprland   | wallpaper for hyprland                                       |
 | hyprshot                    | hyprland   | for screenshot                                               |
+| hyprlock                    | hyprland   | for locking the screen without exiting the hyprland          |
 | helvum                      | waybar     | sound wiring for wireplumber                                 |
 | pavucontrol                 | waybar     | sound controller for pulseaudio                              |
 | iwgtk                       | waybar     | GUI for iwd                                                  |
@@ -49,13 +50,14 @@ stow .
 
 # Config Per Apps
 
-## Hypr
+## Hyprland
 
 Make sure all to copy the `.example` and remove the `.example` file from the copy and adjust the file
 
 ## Rofi
 
 Need this fonts to be installed:
+
 - Montserrat
 - Roboto Condensed
 
