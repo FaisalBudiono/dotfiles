@@ -1,7 +1,7 @@
 local schema_store = require("schemastore")
 
 return {
-    autostart = false,
+    autostart = true,
     settings = {
         json = {
             schemas = schema_store.json.schemas({
