@@ -19,6 +19,7 @@ local config_fts = {
     sql = { "sql" },
     mysql = { "sql" },
     rust = { "rustfmt" },
+    dockerfile = { "dockerls" },
 }
 
 local fts = {}
