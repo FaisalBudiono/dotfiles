@@ -2,6 +2,9 @@ return {
     "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
     build = ":TSUpdate",
+    dependencies = {
+        "RRethy/nvim-treesitter-textsubjects",
+    },
     config = function()
         require("nvim-treesitter.configs").setup({
             ensure_installed = {
@@ -48,6 +51,15 @@ return {
                     scope_incremental = "<leader>vss",
                     node_decremental = "[s",
                 },
+            },
+        })
+
+        require("nvim-treesitter-textsubjects").configure({
+            prev_selection = ",",
+            keymaps = {
+                ["."] = "textsubjects-smart",
+                [";"] = "textsubjects-container-outer",
+                ["i;"] = "textsubjects-container-inner",
             },
         })
     end,
