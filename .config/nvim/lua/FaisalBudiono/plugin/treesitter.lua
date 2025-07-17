@@ -58,8 +58,8 @@ return {
             prev_selection = ",",
             keymaps = {
                 ["."] = "textsubjects-smart",
-                [";"] = "textsubjects-container-outer",
-                ["i;"] = "textsubjects-container-inner",
+                ["\\"] = "textsubjects-container-outer",
+                ["i\\"] = "textsubjects-container-inner",
             },
         })
     end,
