@@ -28,6 +28,7 @@ alias -g cgrm="git rebase --rebase-merges"
 alias -g cgst="git switch -t"
 alias -g cl="clear"
 alias -g ctm="source $ZSH_CONFIG_PATH/zsh-config/tmux-switcher.sh"
+alias -g ctme="source $ZSH_CONFIG_PATH/zsh-config/tmux-quick-rename.sh"
 alias -g v="nvim"
 
 function cddr {
