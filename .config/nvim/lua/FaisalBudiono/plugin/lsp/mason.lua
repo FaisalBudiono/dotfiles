@@ -41,7 +41,6 @@ return {
                 "gofumpt",
                 "goimports",
                 "gopls",
-                "htmx-lsp",
                 "intelephense",
                 "json-lsp",
                 "lua-language-server",
