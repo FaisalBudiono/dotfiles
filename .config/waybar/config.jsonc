@@ -60,7 +60,7 @@
     "spacing": 10,
   },
   "clock": {
-    "format": "{:%A, [%m]%B %d, %Y (%R)}  ",
+    "format": "{:%d[%A] - %m[%B] - %Y (%R)}  ",
     "format-alt": "{:%H:%M:%S}  ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
