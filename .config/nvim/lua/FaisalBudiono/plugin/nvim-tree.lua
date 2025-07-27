@@ -6,6 +6,14 @@ return {
         {
             "<leader>ee",
             ":NvimTreeFindFileToggle<CR>",
+            desc = "Open file explorer",
+            noremap = true,
+            silent = true,
+        },
+        {
+            "<leader>ef",
+            ":NvimTreeFindFile<CR>",
+            desc = "Find file in file explorer",
             noremap = true,
             silent = true,
         },
