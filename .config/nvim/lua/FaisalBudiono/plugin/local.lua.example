@@ -4,7 +4,7 @@ local pane = "zzdocker"
 
 local cmd_clear = function()
     vim.cmd("!tmux send-keys -t " .. pane .. " c-c")
-    vim.cmd("!tmux send-keys -t " .. pane .. " -R")
+    vim.cmd("!tmux send-keys -t " .. pane .. " -R C-l")
     vim.cmd("!tmux clear-history -t " .. pane)
 end
 
