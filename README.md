@@ -14,6 +14,7 @@ For every config it has their own prerequisites.
 | hyprpolkitagent             | hyprland   | polkit agent for hyprland                                    |
 | hyprpaper                   | hyprland   | wallpaper for hyprland                                       |
 | hyprshot                    | hyprland   | for screenshot                                               |
+| hyprpicker                  | hyprland   | to freeze the screen when taking screenshot                  |
 | hyprlock                    | hyprland   | for locking the screen without exiting the hyprland          |
 | helvum                      | waybar     | sound wiring for wireplumber                                 |
 | pavucontrol                 | waybar     | sound controller for pulseaudio                              |
