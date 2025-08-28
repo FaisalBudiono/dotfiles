@@ -76,6 +76,17 @@ return {
             desc = "open telescope custom multigrep with glob",
         },
         {
+            "<leader>pps",
+            function()
+                local filepath = vim.fn.expand("%:~:.")
+
+                require("FaisalBudiono.plugin.telescope.search-local").search({}, filepath)
+            end,
+            noremap = true,
+            silent = true,
+            desc = "open telescope custom local file",
+        },
+        {
             "<leader>pf",
             ":lua require('telescope.builtin').find_files({hidden=true,no_ignore=true})<cr>",
             noremap = true,
