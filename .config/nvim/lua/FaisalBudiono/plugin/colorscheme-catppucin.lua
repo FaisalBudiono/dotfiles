@@ -20,6 +20,7 @@ return {
                 },
                 neogit = true,
                 treesitter = true,
+                ufo = true
             },
         })
 
