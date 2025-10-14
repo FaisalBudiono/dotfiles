@@ -7,6 +7,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         "hrsh7th/cmp-nvim-lsp",
         "b0o/schemastore.nvim",
+        "folke/snacks.nvim",
     },
     config = function()
         vim.diagnostic.config({
