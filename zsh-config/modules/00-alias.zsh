@@ -48,3 +48,8 @@ function cddrp {
 function cts {
     tmux swapw -t $1 -s $2
 }
+
+# Add alias for `asd` command
+function casd {
+    alias asd="$*"
+}
