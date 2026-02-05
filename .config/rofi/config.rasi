@@ -2,15 +2,11 @@ configuration {
   show-icons: true;
 
   drun {
-    display-name: "";
+    display-name: "App";
   }
 
   run {
     display-name: "";
-  }
-
-  dmenu {
-    display-name: "";
   }
 
   window {
@@ -65,7 +61,7 @@ inputbar {
 }
 
 prompt {
-    font: "Roboto Condensed 40";
+    font: "Roboto Condensed 14";
     expand: false;
     padding: 0.4em 0.8em 0.4em 0.4em;
 }

@@ -3,7 +3,7 @@
 # Get the selected client from rofi
 selection=$(hyprctl clients -j |
     jq -r '.[] | "\(.workspace.id)::\(.title) [\(.class)]"' |
-    rofi -dmenu -sync -i)
+    rofi -dmenu -sync -i -p "Go to window")
 
 # Abort if user cancels
 [ -z "$selection" ] && exit
