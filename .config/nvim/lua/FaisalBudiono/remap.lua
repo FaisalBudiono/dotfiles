@@ -73,5 +73,9 @@ vim.keymap.set(
     opts("Overwrite o new line auto comment when cursor on comment section")
 )
 
+-- Helper
 -- Sort
 vim.keymap.set({ "v" }, "<leader>cs", ":! sort -fb<CR>", opts("Sort visual block"))
+
+-- Search Err in Go
+vim.keymap.set({ "n" }, "<leader>l`e", "/\\vreturn.+\\,.+\\CErr<CR>", opts("Search err in Go"))
