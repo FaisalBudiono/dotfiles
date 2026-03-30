@@ -1,6 +1,7 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
+    branch = 'master', -- Add this line
     build = ":TSUpdate",
     dependencies = {
         "RRethy/nvim-treesitter-textsubjects",
