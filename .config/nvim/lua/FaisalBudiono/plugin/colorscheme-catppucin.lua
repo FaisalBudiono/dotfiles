@@ -7,7 +7,7 @@ return {
     },
     config = function()
         require("catppuccin").setup({
-            flavour = "mocha",
+            flavour = "macchiato",
             integrations = {
                 -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
                 gitsigns = true,
