@@ -14,7 +14,6 @@ return {
             virtual_text = false,
         })
 
-        local lspconfig = require("lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
         local mason_lspconfig = require("mason-lspconfig")
         local util = require("FaisalBudiono.util")
@@ -86,10 +85,12 @@ return {
             if isSuccess then
                 local custom_config = util.table_expand(default_config, lang_config)
 
-                lspconfig[server_name].setup(custom_config)
+                vim.lsp.config(server_name, custom_config)
             else
-                lspconfig[server_name].setup(default_config)
+                vim.lsp.config(server_name, default_config)
             end
+
+            vim.lsp.enable(server_name)
         end
     end,
 }
