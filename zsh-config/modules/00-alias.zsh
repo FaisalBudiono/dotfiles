@@ -1,5 +1,6 @@
 alias -g ccda="source $ZSH_CONFIG_PATH/zsh-config/cd-add-fzf.sh"
 alias -g ccd="source $ZSH_CONFIG_PATH/zsh-config/cd-fzf.sh"
+
 alias -g ccde="nvim $ZSH_CONFIG_PATH/zsh-config/local/fzf.txt"
 alias -g cchown="sudo chown -R ucul:ucul"
 alias -g ccurl="curl -# -w \"@$ZSH_CONFIG_PATH/zsh-config/curl-format.txt\""
@@ -25,10 +26,13 @@ alias -g cgpru="cgprune"
 alias -g cgprune="git remote prune origin"
 alias -g cgri="git rebase --rebase-merges -i"
 alias -g cgrm="git rebase --rebase-merges"
+alias -g cgs="git show"
+alias -g cgsno="git show --name-only"
+alias -g cgsns="git show --name-status"
 alias -g cgst="git switch -t"
 alias -g cl="clear"
-alias -g ctm="source $ZSH_CONFIG_PATH/zsh-config/tmux-switcher.sh"
 alias -g ctme="source $ZSH_CONFIG_PATH/zsh-config/tmux-quick-rename.sh"
+alias -g ctm="source $ZSH_CONFIG_PATH/zsh-config/tmux-switcher.sh"
 alias -g v="nvim"
 
 function cddr {
