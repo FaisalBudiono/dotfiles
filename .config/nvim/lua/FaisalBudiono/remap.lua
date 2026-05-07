@@ -78,4 +78,5 @@ vim.keymap.set(
 vim.keymap.set({ "v" }, "<leader>cs", ":! sort -fb<CR>", opts("Sort visual block"))
 
 -- Search Err in Go
-vim.keymap.set({ "n" }, "<leader>l`e", "/\\v\\C(\\.|\\s|\\(){1}Err<CR>", opts("Search err in Go"))
+vim.keymap.set({ "n" }, "<leader>l`e", "/\\v\\C(\\.|\\s|\\(){1}Err<CR>", opts("Search err in Go with case sensitive"))
+vim.keymap.set({ "n" }, "<leader>l`E", "/\\v(\\.|\\s|\\(){1}Err<CR>", opts("Search err in Go with case insensitive"))
