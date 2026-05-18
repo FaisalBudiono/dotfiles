@@ -48,11 +48,25 @@ return {
             desc = "Harpoon goto file 3",
         },
         {
-            "<A-4>",
+            "<A-j>",
             ":lua require('harpoon.ui').nav_file(4)<cr>",
             noremap = true,
             silent = true,
             desc = "Harpoon goto file 4",
+        },
+        {
+            "<A-k>",
+            ":lua require('harpoon.ui').nav_file(5)<cr>",
+            noremap = true,
+            silent = true,
+            desc = "Harpoon goto file 5",
+        },
+        {
+            "<A-l>",
+            ":lua require('harpoon.ui').nav_file(6)<cr>",
+            noremap = true,
+            silent = true,
+            desc = "Harpoon goto file 6",
         },
         {
             "<A-n>",
