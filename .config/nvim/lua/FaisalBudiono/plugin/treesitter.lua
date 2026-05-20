@@ -1,6 +1,6 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    event = "VeryLazy",
+    lazy = false,
     branch = 'master', -- Add this line
     build = ":TSUpdate",
     dependencies = {
