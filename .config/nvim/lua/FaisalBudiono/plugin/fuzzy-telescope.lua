@@ -119,6 +119,15 @@ return {
             desc = "Open telescope symbol",
         },
         {
+            "<leader>ppo",
+            function()
+                require("FaisalBudiono.plugin.telescope.symbol-search").symbol_search(require("telescope.themes").get_dropdown{})
+            end,
+            noremap = true,
+            silent = true,
+            desc = "Choose LSP Symbol and open it via telescope",
+        },
+        {
             "<leader><Bslash>",
             ":lua require('telescope.builtin').keymaps()<cr>",
             noremap = true,
