@@ -49,8 +49,8 @@ vim.keymap.set("v", "<leader>hl", 'y/<Bslash>v<c-r>"<CR>Nzz', opts("highlight se
 -- Quickfix
 vim.keymap.set("n", "<leader>qo", ":copen<CR>", opts("Open quickfix list"))
 vim.keymap.set("n", "<leader>qq", ":cclose<CR>", opts("Quite quickfix list"))
-vim.keymap.set("n", "]q", ":cnext<CR>", opts("Next quickfix"))
-vim.keymap.set("n", "[q", ":cprev<CR>", opts("Prev quickfix"))
+vim.keymap.set("n", "<A-j>", ":cnext<CR>", opts("Next quickfix"))
+vim.keymap.set("n", "<A-k>", ":cprev<CR>", opts("Prev quickfix"))
 
 -- Replace / to \
 vim.keymap.set("v", "<leader>pn", function()
