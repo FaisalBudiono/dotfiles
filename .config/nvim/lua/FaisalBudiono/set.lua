@@ -39,3 +39,5 @@ vim.opt.splitright = true
 
 -- To help autocomplete in command mode
 vim.opt.ignorecase = true
+
+vim.g.clipboard = "osc52"
