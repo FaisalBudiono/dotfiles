@@ -9,4 +9,4 @@ if ! [[ "$workspaceNumber" =~ ^[0-9]+$ ]]; then
     exit
 fi
 
-hyprctl dispatch movetoworkspace $workspaceNumber
+hyprctl dispatch "hl.dsp.window.move({ workspace = '$workspaceNumber' })"

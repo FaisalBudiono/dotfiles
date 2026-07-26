@@ -12,4 +12,4 @@ selection=$(hyprctl clients -j |
 ws_id=$(echo "$selection" | cut -d':' -f1)
 
 # Tell Hyprland to switch
-hyprctl dispatch workspace "$ws_id"
+hyprctl dispatch "hl.dsp.focus({ workspace = '$ws_id' })"

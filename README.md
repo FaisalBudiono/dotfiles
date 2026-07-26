@@ -16,6 +16,7 @@ For every config it has their own prerequisites.
 | hyprshot                    | hyprland   | for screenshot                                               |
 | hyprpicker                  | hyprland   | to freeze the screen when taking screenshot                  |
 | hyprlock                    | hyprland   | for locking the screen without exiting the hyprland          |
+| hyprshutdown                | hyprland   | for exit hyprland gracefully rather than force exit          |
 | helvum                      | waybar     | sound wiring for wireplumber                                 |
 | pavucontrol                 | waybar     | sound controller for pulseaudio                              |
 | iwgtk                       | waybar     | GUI for iwd                                                  |
@@ -29,7 +30,7 @@ For every config it has their own prerequisites.
 | readlink                    | zsh        |                                                              |
 | npm                         | neovim     | use nvm instead, the nvm will be lazy loaded with `cinitnvm` |
 | go                          | neovim     | use gvm instead, the nvm will be lazy loaded with `cinitgvm` |
-| xclip                       | neovim     |                                                              |
+| wl-clipboard                | neovim     |                                                              |
 | ripgrep                     | neovim     |                                                              |
 | nerdfont                    | neovim     |                                                              |
 | mysql-client                | neovim     |                                                              |
