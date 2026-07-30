@@ -334,8 +334,8 @@ hl.bind(super("SHIFT + mouse_down"), hl.dsp.window.move({ workspace = "+1" }))
 --
 -- move between monitor
 --
-hl.bind(super("SHIFT + COMMA"), hl.dsp.window.move({ monitor = "-1" }))
-hl.bind(super("SHIFT + PERIOD"), hl.dsp.window.move({ monitor = "+1" }))
+hl.bind(super("SHIFT + COMMA"), hl.dsp.workspace.move({ monitor = "-1" }))
+hl.bind(super("SHIFT + PERIOD"), hl.dsp.workspace.move({ monitor = "+1" }))
 
 -- Dynamically load monitor config
 local has_monitor_config = pcall(require, "culs.monitor")
