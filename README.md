@@ -36,6 +36,7 @@ For every config it has their own prerequisites.
 | mysql-client                | neovim     |                                                              |
 | postgresql-client           | neovim     |                                                              |
 | rustfmt                     | neovim     |                                                              |
+| tree-sitter-cli             | neovim     |                                                              |
 | FiraMono Nerd Font          | ghostty    |                                                              |
 | montserrat                  | rofi       | font                                                         |
 | Roboto Condensed            | rofi       | font                                                         |

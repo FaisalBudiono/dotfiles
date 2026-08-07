@@ -57,7 +57,6 @@ return {
                 "tailwindcss-language-server",
                 "taplo",
                 "templ",
-                "typescript-language-server",
                 "yaml-language-server",
             },
         })
