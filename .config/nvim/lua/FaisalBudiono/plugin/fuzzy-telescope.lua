@@ -12,13 +12,6 @@ return {
     },
     keys = {
         {
-            "<C-p>",
-            ":lua require('telescope.builtin').git_files()<cr>",
-            noremap = true,
-            silent = true,
-            desc = "Open telescope fuzzy finder for git files",
-        },
-        {
             "<leader>pt",
             function()
                 require("telescope.builtin").grep_string({
@@ -86,20 +79,6 @@ return {
             desc = "open telescope custom local file",
         },
         {
-            "<leader>pf",
-            ":lua require('telescope.builtin').find_files({hidden=true,no_ignore=true})<cr>",
-            noremap = true,
-            silent = true,
-            desc = "Open telescope fuzzy finder for all file",
-        },
-        {
-            "<leader>pb",
-            ":lua require('telescope.builtin').buffers()<cr>",
-            noremap = true,
-            silent = true,
-            desc = "Open telescope fuzzy finder for buffers",
-        },
-        {
             "<leader>pO",
             function()
                 require("telescope.builtin").lsp_document_symbols({
@@ -120,32 +99,13 @@ return {
         {
             "<leader>ppo",
             function()
-                require("FaisalBudiono.plugin.telescope.symbol-search").symbol_search(require("telescope.themes").get_dropdown{})
+                require("FaisalBudiono.plugin.telescope.symbol-search").symbol_search(
+                    require("telescope.themes").get_dropdown({})
+                )
             end,
             noremap = true,
             silent = true,
             desc = "Choose LSP Symbol and open it via telescope",
-        },
-        {
-            "<leader><Bslash>",
-            ":lua require('telescope.builtin').keymaps()<cr>",
-            noremap = true,
-            silent = true,
-            desc = "Open telescope listing all keymap",
-        },
-        {
-            "<leader>ghb",
-            ":lua require('telescope.builtin').git_bcommits()<cr>",
-            noremap = true,
-            silent = true,
-            desc = "Open telescope git file change",
-        },
-        {
-            "<leader>ghh",
-            ":lua require('telescope.builtin').git_commits()<cr>",
-            noremap = true,
-            silent = true,
-            desc = "Open telescope git history",
         },
     },
     config = function()
