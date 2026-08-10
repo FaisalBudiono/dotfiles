@@ -24,7 +24,10 @@ return {
             {
                 "<leader>pf",
                 function()
-                    Snacks.picker.files()
+                    Snacks.picker.files({
+                        ignored = true,
+                        hidden = true,
+                    })
                 end,
                 noremap = true,
                 silent = true,
