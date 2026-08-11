@@ -27,9 +27,9 @@ hl.env("HYPRCURSOR_SIZE", "24")
 
 -- Set XDG_MENU_PREFIX
 -- https://wiki.archlinux.org/title/XDG_MIME_Applications
-hl.env("XDG_MENU_PREFIX", "arch- kbuildsycoca6")
+-- hl.env("XDG_MENU_PREFIX", "arch- kbuildsycoca6")
 -- If not working use the following
--- hl.env("XDG_MENU_PREFIX", "arch-")
+hl.env("XDG_MENU_PREFIX", "arch-")
 
 hl.config({
 	debug = {
