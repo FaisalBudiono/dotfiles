@@ -81,7 +81,22 @@ return {
         },
         ---@type snacks.Config
         opts = {
-            picker = {},
+            picker = {
+                win = {
+                    input = {
+                        keys = {
+                            ["<c-j>"] = { "edit_split", mode = { "i", "n" } },
+                            ["<c-l>"] = { "edit_vsplit", mode = { "i", "n" } },
+                        },
+                    },
+                    list = {
+                        keys = {
+                            ["<c-j>"] = "edit_split",
+                            ["<c-l>"] = "edit_vsplit",
+                        },
+                    },
+                },
+            },
             image = {
                 -- your image configuration comes here
                 -- or leave it empty to use the default settings
