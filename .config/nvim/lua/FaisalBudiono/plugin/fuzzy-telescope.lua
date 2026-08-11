@@ -67,6 +67,7 @@ return {
             silent = true,
             desc = "open telescope custom multigrep with glob",
         },
+        -- @todo move to snacks
         {
             "<leader>pps",
             function()
@@ -78,6 +79,7 @@ return {
             silent = true,
             desc = "open telescope custom local file",
         },
+        -- @todo move to snacks
         {
             "<leader>pO",
             function()
@@ -89,6 +91,7 @@ return {
             silent = true,
             desc = "Open telescope symbol method only",
         },
+        -- @todo move to snacks
         {
             "<leader>po",
             ":lua require('telescope.builtin').lsp_document_symbols()<cr>",

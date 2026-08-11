@@ -6,6 +6,7 @@ local action_state = require("telescope.actions.state")
 
 local M = {}
 
+-- @todo migrate to snacks
 M.symbol_search = function(opts)
     opts = opts or {}
 

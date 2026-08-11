@@ -5,6 +5,7 @@ local conf = require("telescope.config").values
 
 local M = {}
 
+-- @todo migrate to snacks
 M.live_multigreps = function(opts)
     opts = opts or {}
     opts.cwd = opts.cwd or vim.uv.cwd()
