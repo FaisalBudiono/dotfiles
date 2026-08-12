@@ -85,14 +85,14 @@ return {
                 win = {
                     input = {
                         keys = {
-                            ["<c-j>"] = { "edit_split", mode = { "i", "n" } },
-                            ["<c-l>"] = { "edit_vsplit", mode = { "i", "n" } },
+                            ["<a-j>"] = { "edit_split", mode = { "i", "n" } },
+                            ["<a-l>"] = { "edit_vsplit", mode = { "i", "n" } },
                         },
                     },
                     list = {
                         keys = {
-                            ["<c-j>"] = "edit_split",
-                            ["<c-l>"] = "edit_vsplit",
+                            ["<a-j>"] = "edit_split",
+                            ["<a-l>"] = "edit_vsplit",
                         },
                     },
                 },
