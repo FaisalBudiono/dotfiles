@@ -17,14 +17,18 @@ return {
         },
         {
             "<leader>gd",
-            ":lua require('gitsigns').diffthis()<cr>",
+            function()
+                require("gitsigns").diffthis()
+            end,
             noremap = true,
             silent = true,
             desc = "Git diff between latest and stage",
         },
         {
             "<leader>gb",
-            ":lua require('gitsigns').blame_line()<cr>",
+            function()
+                require("gitsigns").blame_line()
+            end,
             noremap = true,
             silent = true,
             desc = "Git blame line",
