@@ -37,6 +37,10 @@ hl.config({
 		no_hardware_cursors = true,
 	},
 
+	misc = {
+		render_unfocused_fps = 60,
+	},
+
 	debug = {
 		disable_logs = false,
 	},
@@ -127,6 +131,14 @@ hl.window_rule({
 		class = "*",
 	},
 	suppress_event = "maximize",
+})
+
+hl.window_rule({
+	name = "always-render-winboat",
+	match = {
+		class = "xfreerdp",
+	},
+	render_unfocused = true,
 })
 
 hl.window_rule({
