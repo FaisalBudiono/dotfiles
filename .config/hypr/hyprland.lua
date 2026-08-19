@@ -32,6 +32,11 @@ hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("XDG_MENU_PREFIX", "arch-")
 
 hl.config({
+	cursor = {
+		invisible = false,
+		no_hardware_cursors = true,
+	},
+
 	debug = {
 		disable_logs = false,
 	},
