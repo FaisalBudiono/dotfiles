@@ -194,7 +194,10 @@ hl.bind(super("PERIOD"), hl.dsp.exec_cmd("rofi -modi emoji -show emoji"))
 --
 -- Reload waybar
 --
-hl.bind(super("CTRL + SHIFT + ALT + W"), hl.dsp.exec_cmd("pkill waybar && waybar &"))
+hl.bind(super("CTRL + SHIFT + ALT + W"), function()
+	hl.dispatch(hl.dsp.exec_cmd("pkill waybar"))
+	hl.dispatch(hl.dsp.exec_cmd("waybar &"))
+end)
 
 --
 -- Shortcut
