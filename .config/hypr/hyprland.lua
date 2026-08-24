@@ -311,6 +311,11 @@ hl.bind(super("SHIFT + L"), hl.dsp.window.swap({ direction = "right" }))
 hl.bind(super("SHIFT + J"), hl.dsp.window.swap({ direction = "down" }))
 hl.bind(super("SHIFT + K"), hl.dsp.window.swap({ direction = "up" }))
 
+hl.bind(super("SHIFT + left"), hl.dsp.window.swap({ direction = "left" }))
+hl.bind(super("SHIFT + right"), hl.dsp.window.swap({ direction = "right" }))
+hl.bind(super("SHIFT + down"), hl.dsp.window.swap({ direction = "down" }))
+hl.bind(super("SHIFT + up"), hl.dsp.window.swap({ direction = "up" }))
+
 hl.bind(super("mouse_up"), hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(super("mouse_down"), hl.dsp.focus({ workspace = "e+1" }))
 
