@@ -110,3 +110,12 @@ It will fail the installation because of npm issue. To fix this issue:
 
 > NOTE:
 > Still need to install the antigen and starship manually
+
+## Dolphin
+
+### Set shortcut like `ALT+SHIFT+T` to open the terminal
+
+- Open Setting -> Configure Dolphin -> Context Menu
+- Click on `Shortcuts`
+- Search for `Open Terminal Here`
+- Set `ALT+SHIFT+T` as shortcut
