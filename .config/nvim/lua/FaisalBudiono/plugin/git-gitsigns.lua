@@ -25,7 +25,16 @@ return {
             desc = "Git diff between latest and stage",
         },
         {
-            "<leader>gb",
+            "<leader>gbf",
+            function()
+                require("gitsigns").blame()
+            end,
+            noremap = true,
+            silent = true,
+            desc = "Git blame file",
+        },
+        {
+            "<leader>gbl",
             function()
                 require("gitsigns").blame_line()
             end,
