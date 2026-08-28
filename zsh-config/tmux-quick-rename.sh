@@ -9,8 +9,9 @@ TEMPFILE_BAK=$ZSH_CONFIG_PATH/zsh-config/local/tmux-quick-rename-list-raw.txt.ba
 echo $SESSION_LIST >$TEMPFILE
 echo $SESSION_LIST | tr ' ' '\n' | awk '{print $1";"$1}' | sort >$TEMPFILE_EDITABLE
 
-EDITOR=nvim
-$EDITOR $TEMPFILE_EDITABLE
+SESSION_NAME=$(tmux display-message -p '#S')
+
+nvim +/^$SESSION_NAME\; $TEMPFILE_EDITABLE;
 
 while read p; do
     CHANGE_TO=$(echo $p | awk -F ";" '{print $1}')
@@ -33,7 +34,6 @@ done <$TEMPFILE_EDITABLE
 
 while read p; do
     ORIGINAL_NAME=$(echo $p | awk -F ";" '{print $1}')
-
 
     tmux has-session -t $ORIGINAL_NAME 2>/dev/null
     EXIT_CODE=$?
