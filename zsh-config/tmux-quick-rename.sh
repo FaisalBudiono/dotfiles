@@ -11,7 +11,7 @@ echo $SESSION_LIST | tr ' ' '\n' | awk '{print $1";"$1}' | sort >$TEMPFILE_EDITA
 
 SESSION_NAME=$(tmux display-message -p '#S')
 
-nvim +/^$SESSION_NAME\; $TEMPFILE_EDITABLE;
+nvim +/^$SESSION_NAME\; $TEMPFILE_EDITABLE
 
 while read p; do
     CHANGE_TO=$(echo $p | awk -F ";" '{print $1}')
