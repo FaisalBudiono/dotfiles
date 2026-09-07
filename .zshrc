@@ -19,6 +19,8 @@ source $ZSH_CONFIG_PATH/zsh-config/modules/gvm-config.zsh
 source $ZSH_CONFIG_PATH/zsh-config/modules/nvm-config.zsh
 source $ZSH_CONFIG_PATH/zsh-config/modules/service.zsh
 
+export PATH="$PATH:$HOME/.local/bin"
+
 eval "$(starship init zsh)"
 
 # Set up fzf key binding
