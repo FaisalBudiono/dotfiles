@@ -31,10 +31,12 @@ return {
         })
 
         vim.api.nvim_create_autocmd("FileType", {
-            pattern = {"*"},
+            pattern = { "*" },
             callback = function(args)
                 pcall(vim.treesitter.start, args.buf)
             end,
         })
+
+        vim.treesitter.language.register("sql", { "sql", "mysql" })
     end,
 }
