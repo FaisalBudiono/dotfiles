@@ -1,5 +1,8 @@
 return {
     autostart = true,
+    init_options = {
+        clearCache = true, -- Add this line
+    },
     settings = {
         intelephense = {
             stubs = {
