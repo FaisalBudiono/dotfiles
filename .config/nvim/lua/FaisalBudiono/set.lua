@@ -41,3 +41,13 @@ vim.opt.splitright = true
 vim.opt.ignorecase = true
 
 vim.g.clipboard = "osc52"
+
+-- Persist undo history between sessions
+local undo_dir = vim.fn.stdpath("data") .. "/cul_undo"
+
+if vim.fn.isdirectory(undo_dir) == 0 then
+    vim.fn.mkdir(undo_dir, "p")
+end
+
+vim.opt.undodir = undo_dir
+vim.opt.undofile = true
