@@ -59,7 +59,7 @@ return {
             -- @todo make toggleable setting for PHP
             environment = {
                 phpVersion = "7.4",
-                -- phpVersion = "8.3",
+                -- phpVersion = "8.3.0",
                 -- phpVersion = "8.2",
             },
         },
