@@ -1,0 +1,12 @@
+{
+  "workspace": {
+    "library": [
+      "$VIMRUNTIME/lua",
+      "~/.local/share/nvim/lazy/snacks.nvim/lua"
+    ],
+    "checkThirdParty": false
+  },
+  "diagnostics": {
+    "globals": ["vim", "Snacks"]
+  }
+}
