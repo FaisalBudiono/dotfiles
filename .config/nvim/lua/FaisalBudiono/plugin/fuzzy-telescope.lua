@@ -58,15 +58,6 @@ return {
             silent = true,
             desc = "Open telescope grep string from visual mode",
         },
-        {
-            "<leader>pS",
-            function()
-                require("FaisalBudiono.plugin.telescope.multigrep").live_multigreps()
-            end,
-            noremap = true,
-            silent = true,
-            desc = "open telescope custom multigrep with glob",
-        },
         -- @todo move to snacks
         {
             "<leader>pps",

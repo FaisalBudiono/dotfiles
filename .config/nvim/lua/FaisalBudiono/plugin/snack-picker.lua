@@ -60,6 +60,7 @@ return {
                 silent = true,
                 desc = "Open snack picker git file change",
             },
+            -- @todo make if we press confirm we can see the diff inside neovim
             {
                 "<leader>ghh",
                 function()
@@ -78,8 +79,20 @@ return {
                 silent = true,
                 desc = "Open snack picker git log by line",
             },
+
+            {
+                "<leader>pS",
+                function()
+                    local mg = require("FaisalBudiono.plugin.snacks.multigrep")
+
+                    mg.rg_picker()
+                end,
+                noremap = true,
+                silent = true,
+                desc = "Open snack picker custom multigrep with glob",
+            },
         },
-        ---@type snacks.Config
+        --- @type snacks.Config
         opts = {
             picker = {
                 win = {
