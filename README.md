@@ -17,6 +17,7 @@ For every config it has their own prerequisites.
 | hyprpicker                  | hyprland   | to freeze the screen when taking screenshot                  |
 | hyprlock                    | hyprland   | for locking the screen without exiting the hyprland          |
 | hyprshutdown                | hyprland   | for exit hyprland gracefully rather than force exit          |
+| brightnessctl               | hyprland   | For changing the brightness                                  |
 | helvum                      | waybar     | sound wiring for wireplumber                                 |
 | pavucontrol                 | waybar     | sound controller for pulseaudio                              |
 | iwgtk                       | waybar     | GUI for iwd                                                  |
